@@ -11,7 +11,7 @@ let package = Package(
         .library( name: "PolarBleSdk", targets: ["PolarBleSdk"]),
     ],
     dependencies: [
-        .package(name: "RSwiftExt", url: "https://github.com/RSwiftCommunity/RSwiftExt.git", .exact("6.2.1")),
+        .package(name: "RxSwiftExt", url: "https://github.com/RxSwiftCommunity/RxSwiftExt.git", .exact("6.2.1")),
         .package(name: "SwiftProtobuf", url: "https://github.com/apple/swift-protobuf.git", from: "1.6.0"),
     ],
     targets: [
