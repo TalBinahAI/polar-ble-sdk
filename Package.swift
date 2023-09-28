@@ -11,13 +11,13 @@ let package = Package(
         .library( name: "PolarBleSdk", targets: ["PolarBleSdk"]),
     ],
     dependencies: [
-        .package(name: "RxSwift", url: "https://github.com/ReactiveX/RxSwift.git", .exact("6.5.0")),
+        .package(name: "RSwiftExt", url: "https://github.com/RSwiftCommunity/RSwiftExt.git", .exact("6.2.1")),
         .package(name: "SwiftProtobuf", url: "https://github.com/apple/swift-protobuf.git", from: "1.6.0"),
     ],
     targets: [
         .target(
             name: "PolarBleSdk",
-            dependencies: ["SwiftProtobuf", "RxSwift"],
+            dependencies: ["SwiftProtobuf", "RxSwiftExt"],
             path: "sources/iOS/ios-communications/Sources",
             exclude: ["iOSCommunications/Info.plist", "PolarBleSdk/Info.plist"]
         ),
